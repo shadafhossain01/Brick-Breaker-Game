@@ -48,13 +48,6 @@ for (let c = 0; c < brickColumnCount; c++) {
 document.addEventListener('keydown', keyDownHandler);
 document.addEventListener('keyup', keyUpHandler);
 document.addEventListener('mousemove', mouseMoveHandler);
-document.addEventListener("keypress", newStart )
-
-function newStart(e){
-if(e.key=="r" || e.key=="R"){
-    resetGame()
-}
-}
 
 function keyDownHandler(e) {
     if (e.key === 'Right' || e.key === 'ArrowRight') rightPressed = true;
